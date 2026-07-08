@@ -21,7 +21,7 @@ test.describe('MiniShop ecommerce smoke tests', () => {
   });
 
   test('search shows empty state when no product matches', async ({ page }) => {
-    await page.getByTestId('search-input').fill('laptop');
+    await page.getByTestId('search-input').fill('zzzz-no-product');
 
     await expect(page.getByTestId('empty-products')).toBeVisible();
   });
