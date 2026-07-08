@@ -52,3 +52,30 @@ The project demonstrates a practical AI-assisted QA workflow for an e-commerce a
 - Add accessibility scanning with axe
 - Add test coverage tags by risk level
 - Add known-bug suite and defect trend report
+
+## Regression Finding After Catalog Expansion
+
+After expanding the product catalog to 5 categories and 100 products, one existing Playwright regression test failed.
+
+### Failed Test
+
+`search shows empty state when no product matches`
+
+### Root Cause
+
+The test used `laptop` as a search term for validating the empty search state. After the catalog expansion, `laptop` became valid product data, so the test no longer represented a no-result scenario.
+
+### Fix
+
+The test input was updated from:
+
+`await page.getByTestId('search-input').fill('laptop');`
+
+to:
+
+`await page.getByTestId('search-input').fill('zzzz-no-product');`
+
+### QA Learning
+
+This issue demonstrates the importance of maintaining test data when product catalogs or fixtures change. A regression test can become invalid not because the application is broken, but because the test data no longer matches the expected scenario.
+
