@@ -1,0 +1,16 @@
+{
+  "name": "ai-ecommerce-qa-lab",
+  "version": "1.0.0",
+  "description": "Portfolio project: AI-assisted QA testing for a demo ecommerce page using Playwright.",
+  "scripts": {
+    "start": "http-server . -p 3000",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "http-server": "latest"
+  }
+}

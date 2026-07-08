@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniShop QA Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">AI Ecommerce QA Lab</p>
+      <h1>MiniShop</h1>
+      <p class="subtitle">A demo e-commerce page built for QA automation and AI-assisted testing.</p>
+    </div>
+    <button id="cart-toggle" class="cart-button" aria-label="Open cart">
+      Cart <span id="cart-count" data-testid="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Product controls">
+      <label for="search">Search products</label>
+      <input id="search" data-testid="search-input" type="search" placeholder="Search backpack, shoes..." />
+
+      <label for="sort">Sort by</label>
+      <select id="sort" data-testid="sort-select">
+        <option value="default">Featured</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+      </select>
+    </section>
+
+    <section aria-labelledby="products-title">
+      <h2 id="products-title">Products</h2>
+      <div id="product-grid" class="product-grid" data-testid="product-grid"></div>
+      <p id="empty-products" class="empty hidden" data-testid="empty-products">No products found.</p>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="cart-close" class="link-button" aria-label="Close cart">Close</button>
+    </div>
+    <div id="cart-items" data-testid="cart-items"></div>
+    <p id="empty-cart" class="empty" data-testid="empty-cart">Your cart is empty.</p>
+
+    <label for="coupon">Coupon code</label>
+    <div class="coupon-row">
+      <input id="coupon" data-testid="coupon-input" type="text" placeholder="Try QA10" />
+      <button id="apply-coupon" data-testid="apply-coupon">Apply</button>
+    </div>
+    <p id="coupon-message" data-testid="coupon-message" aria-live="polite"></p>
+
+    <div class="totals">
+      <p>Subtotal: <strong id="subtotal" data-testid="subtotal">$0.00</strong></p>
+      <p>Discount: <strong id="discount" data-testid="discount">$0.00</strong></p>
+      <p>Total: <strong id="total" data-testid="total">$0.00</strong></p>
+    </div>
+
+    <button id="checkout-open" class="primary" data-testid="checkout-open" disabled>Checkout</button>
+  </aside>
+
+  <div id="checkout-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+    <div class="modal-content">
+      <button id="checkout-close" class="link-button close-modal" aria-label="Close checkout">Close</button>
+      <h2 id="checkout-title">Checkout</h2>
+      <form id="checkout-form" data-testid="checkout-form">
+        <label for="name">Full name</label>
+        <input id="name" data-testid="name-input" required />
+
+        <label for="email">Email</label>
+        <input id="email" data-testid="email-input" type="email" required />
+
+        <label for="address">Address</label>
+        <input id="address" data-testid="address-input" required />
+
+        <button class="primary" data-testid="place-order" type="submit">Place order</button>
+      </form>
+      <p id="order-confirmation" class="success hidden" data-testid="order-confirmation" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
