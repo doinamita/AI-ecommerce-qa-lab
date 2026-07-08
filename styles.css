@@ -210,4 +210,24 @@ form {
   .controls {
     grid-template-columns: 1fr;
   }
+  .product-meta {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #475569;
+  }
+  
+  .stock {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #166534;
+  }
+  
+  .out-of-stock {
+    color: #b00020;
+  }
+  
+  .product-card button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }

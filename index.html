@@ -22,7 +22,15 @@
     <section class="controls" aria-label="Product controls">
       <label for="search">Search products</label>
       <input id="search" data-testid="search-input" type="search" placeholder="Search backpack, shoes..." />
-
+      <label for="category">Category</label>
+      <select id="category" data-testid="category-select">
+        <option value="all">All categories</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Footwear">Footwear</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Home Office">Home Office</option>
+      </select>
       <label for="sort">Sort by</label>
       <select id="sort" data-testid="sort-select">
         <option value="default">Featured</option>
