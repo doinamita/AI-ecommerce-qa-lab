@@ -166,3 +166,20 @@ Automated tests validate:
 - 5 expected categories are present
 - Product cards render correctly in the UI
 
+
+## Local Storage Persistence
+
+The application now uses browser localStorage to persist key ecommerce state between page refreshes.
+
+Persisted data includes:
+
+- Cart items and quantities
+- Applied QA10 coupon state
+- Last order summary
+
+Automated Playwright tests validate:
+
+- Cart remains available after page refresh
+- Coupon state and discount remain available after page refresh
+- Last order summary is saved locally after checkout
+
