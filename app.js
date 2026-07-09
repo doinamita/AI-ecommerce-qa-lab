@@ -4,6 +4,12 @@ let currentProducts = [];
 let cart = [];
 let couponApplied = false;
 
+const STORAGE_KEYS = {
+  cart: 'ai-ecommerce-cart',
+  coupon: 'ai-ecommerce-coupon',
+  lastOrder: 'ai-ecommerce-last-order'
+};
+
 const productGrid = document.getElementById('product-grid');
 const emptyProducts = document.getElementById('empty-products');
 const searchInput = document.getElementById('search');
@@ -33,9 +39,75 @@ const nameError = document.getElementById('name-error');
 const emailError = document.getElementById('email-error');
 const addressError = document.getElementById('address-error');
 const checkoutErrorSummary = document.getElementById('checkout-error-summary');
+const lastOrderSummary = document.getElementById('last-order-summary');
 
 function formatMoney(value) {
   return `$${value.toFixed(2)}`;
+}
+
+
+function saveCartToStorage() {
+  const savedCart = cart.map((item) => ({
+    id: item.id,
+    quantity: item.quantity
+  }));
+
+  localStorage.setItem(STORAGE_KEYS.cart, JSON.stringify(savedCart));
+}
+
+function restoreCartFromStorage() {
+  const savedCart = JSON.parse(localStorage.getItem(STORAGE_KEYS.cart) || '[]');
+
+  cart = savedCart
+    .map((savedItem) => {
+      const product = products.find((item) => item.id === savedItem.id);
+
+      if (!product) {
+        return null;
+      }
+
+      return {
+        ...product,
+        quantity: savedItem.quantity
+      };
+    })
+    .filter(Boolean);
+
+  couponApplied = localStorage.getItem(STORAGE_KEYS.coupon) === 'QA10';
+
+  if (couponApplied) {
+    couponInput.value = 'QA10';
+    couponMessage.textContent = 'Coupon QA10 applied.';
+  }
+
+  renderCart();
+  renderLastOrder();
+}
+
+function saveCouponToStorage() {
+  if (couponApplied) {
+    localStorage.setItem(STORAGE_KEYS.coupon, 'QA10');
+  } else {
+    localStorage.removeItem(STORAGE_KEYS.coupon);
+  }
+}
+
+function saveLastOrder(order) {
+  localStorage.setItem(STORAGE_KEYS.lastOrder, JSON.stringify(order));
+}
+
+function renderLastOrder() {
+  const savedOrder = localStorage.getItem(STORAGE_KEYS.lastOrder);
+
+  if (!savedOrder) {
+    lastOrderSummary.classList.add('hidden');
+    lastOrderSummary.textContent = '';
+    return;
+  }
+
+  const order = JSON.parse(savedOrder);
+  lastOrderSummary.textContent = `Last order: ${order.itemCount} item(s), total ${order.total}.`;
+  lastOrderSummary.classList.remove('hidden');
 }
 
 async function loadProducts() {
@@ -48,6 +120,7 @@ async function loadProducts() {
 
     products = await response.json();
     currentProducts = [...products];
+    restoreCartFromStorage();
     applyFilters();
   } catch (error) {
     productGrid.innerHTML = '';
@@ -135,6 +208,7 @@ function addToCart(productId) {
 function removeFromCart(productId) {
   cart = cart.filter((item) => item.id !== productId);
   renderCart();
+  saveCartToStorage();
 }
 
 function calculateTotals() {
@@ -281,6 +355,12 @@ checkoutForm.addEventListener('submit', (event) => {
   }
 
   const totals = calculateTotals();
+  const lastOrder = {
+    itemCount: cart.reduce((sum, item) => sum + item.quantity, 0),
+    total: formatMoney(totals.total),
+    createdAt: new Date().toISOString()
+  };
+
   orderConfirmation.textContent = `Order placed successfully. Total paid: ${formatMoney(totals.total)}.`;
   orderConfirmation.classList.remove('hidden');
   cart = [];
@@ -290,6 +370,10 @@ checkoutForm.addEventListener('submit', (event) => {
   checkoutForm.reset();
   clearCheckoutValidation();
   renderCart();
+  saveCartToStorage();
+  saveCouponToStorage();
+  saveLastOrder(lastOrder);
+  renderLastOrder();
 });
 
 loadProducts();
