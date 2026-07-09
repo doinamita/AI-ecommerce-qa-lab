@@ -203,6 +203,7 @@ function addToCart(productId) {
     cart.push({ ...product, quantity: 1 });
   }
 
+  cartPanel.classList.add('open');
   renderCart();
   saveCartToStorage();
 }
