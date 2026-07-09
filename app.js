@@ -256,6 +256,7 @@ function applyCoupon() {
 
   if (coupon === 'QA10') {
     couponApplied = true;
+    couponInput.value = 'QA10';
     couponMessage.textContent = 'Coupon QA10 applied: 10% discount.';
   } else {
     couponApplied = false;
@@ -263,6 +264,7 @@ function applyCoupon() {
   }
 
   renderCart();
+  saveCouponToStorage();
 }
 
 productGrid.addEventListener('click', (event) => {
