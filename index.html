@@ -96,5 +96,19 @@
   </div>
 
   <script src="app.js"></script>
+
+  <div id="product-detail-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="product-detail-title" data-testid="product-detail-modal">
+    <div class="modal-content product-detail-content">
+      <button id="product-detail-close" class="close-button" aria-label="Close product details" data-testid="product-detail-close">×</button>
+      <div id="product-detail-emoji" class="emoji large-emoji" aria-hidden="true" data-testid="product-detail-emoji"></div>
+      <h2 id="product-detail-title" data-testid="product-detail-title"></h2>
+      <p id="product-detail-category" class="muted" data-testid="product-detail-category"></p>
+      <p id="product-detail-description" data-testid="product-detail-description"></p>
+      <p id="product-detail-rating" data-testid="product-detail-rating"></p>
+      <p id="product-detail-stock" data-testid="product-detail-stock"></p>
+      <button id="product-detail-add" class="primary" data-testid="product-detail-add">Add to cart</button>
+    </div>
+  </div>
+
 </body>
 </html>

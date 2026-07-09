@@ -243,3 +243,17 @@ form {
 input[aria-invalid="true"] {
   border-color: #b00020;
 }
+
+
+.large-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail-content {
+  max-width: 460px;
+}
+
+.product-card {
+  cursor: pointer;
+}

@@ -40,6 +40,17 @@ const emailError = document.getElementById('email-error');
 const addressError = document.getElementById('address-error');
 const checkoutErrorSummary = document.getElementById('checkout-error-summary');
 const lastOrderSummary = document.getElementById('last-order-summary');
+const productDetailModal = document.getElementById('product-detail-modal');
+const productDetailClose = document.getElementById('product-detail-close');
+const productDetailEmoji = document.getElementById('product-detail-emoji');
+const productDetailTitle = document.getElementById('product-detail-title');
+const productDetailCategory = document.getElementById('product-detail-category');
+const productDetailDescription = document.getElementById('product-detail-description');
+const productDetailRating = document.getElementById('product-detail-rating');
+const productDetailStock = document.getElementById('product-detail-stock');
+const productDetailAdd = document.getElementById('product-detail-add');
+
+let selectedProductId = null;
 
 function formatMoney(value) {
   return `$${value.toFixed(2)}`;
@@ -139,6 +150,7 @@ function renderProducts() {
 
     card.className = 'product-card';
     card.setAttribute('data-testid', `product-card-${product.id}`);
+    card.setAttribute('data-product-id', product.id);
 
     card.innerHTML = `
       <div class="emoji" aria-hidden="true">${product.emoji}</div>
@@ -267,10 +279,43 @@ function applyCoupon() {
   saveCouponToStorage();
 }
 
+function openProductDetails(productId) {
+  const product = products.find((item) => item.id === productId);
+
+  if (!product) {
+    return;
+  }
+
+  selectedProductId = product.id;
+  productDetailEmoji.textContent = product.emoji;
+  productDetailTitle.textContent = product.name;
+  productDetailCategory.textContent = `Category: ${product.category}`;
+  productDetailDescription.textContent = product.description;
+  productDetailRating.textContent = `Rating: ${product.rating} / 5`;
+  productDetailStock.textContent = product.stock > 0 ? `In stock: ${product.stock}` : 'Out of stock';
+  productDetailAdd.disabled = product.stock === 0;
+  productDetailAdd.textContent = product.stock === 0 ? 'Out of stock' : 'Add to cart';
+
+  productDetailModal.classList.remove('hidden');
+}
+
+function closeProductDetails() {
+  productDetailModal.classList.add('hidden');
+  selectedProductId = null;
+}
+
 productGrid.addEventListener('click', (event) => {
   const button = event.target.closest('button[data-product-id]');
+
   if (button) {
     addToCart(button.dataset.productId);
+    return;
+  }
+
+  const card = event.target.closest('article[data-product-id]');
+
+  if (card) {
+    openProductDetails(card.dataset.productId);
   }
 });
 
@@ -284,6 +329,25 @@ cartItems.addEventListener('click', (event) => {
 searchInput.addEventListener('input', applyFilters);
 sortSelect.addEventListener('change', applyFilters);
 categorySelect.addEventListener('change', applyFilters);
+productDetailClose.addEventListener('click', closeProductDetails);
+productDetailAdd.addEventListener('click', () => {
+  if (selectedProductId) {
+    addToCart(selectedProductId);
+  }
+
+  closeProductDetails();
+});
+productDetailModal.addEventListener('click', (event) => {
+  if (event.target === productDetailModal) {
+    closeProductDetails();
+  }
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeProductDetails();
+  }
+});
+
 cartToggle.addEventListener('click', () => cartPanel.classList.add('open'));
 cartClose.addEventListener('click', () => cartPanel.classList.remove('open'));
 applyCouponButton.addEventListener('click', applyCoupon);
