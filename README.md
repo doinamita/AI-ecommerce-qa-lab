@@ -149,3 +149,20 @@ This project demonstrates:
 - Test documentation
 - Bug reporting
 - Quality leadership thinking
+
+## Data Source
+
+The product catalog was moved from hardcoded JavaScript into a structured JSON file:
+
+`data/products.json`
+
+This improves maintainability and separates product test data from application logic.
+
+Automated tests validate:
+
+- Product data loads successfully from JSON
+- Product schema includes required fields
+- 100 products are available
+- 5 expected categories are present
+- Product cards render correctly in the UI
+
