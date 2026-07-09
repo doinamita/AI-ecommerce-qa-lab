@@ -190,9 +190,11 @@ function applyFilters() {
 
 function addToCart(productId) {
   const product = products.find((item) => item.id === productId);
+
   if (!product || product.stock === 0) {
     return;
   }
+
   const existing = cart.find((item) => item.id === productId);
 
   if (existing) {
@@ -202,7 +204,7 @@ function addToCart(productId) {
   }
 
   renderCart();
-  cartPanel.classList.add('open');
+  saveCartToStorage();
 }
 
 function removeFromCart(productId) {
