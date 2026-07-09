@@ -74,16 +74,24 @@
     <div class="modal-content">
       <button id="checkout-close" class="link-button close-modal" aria-label="Close checkout">Close</button>
       <h2 id="checkout-title">Checkout</h2>
-      <form id="checkout-form" data-testid="checkout-form">
+      <form id="checkout-form" data-testid="checkout-form" novalidate>
         <label for="name">Full name</label>
         <input id="name" data-testid="name-input" required />
+        <p id="name-error" class="field-error hidden" data-testid="name-error"></p>
+        <p id="name-error" class="field-error hidden" data-testid="name-error"></p>
 
         <label for="email">Email</label>
         <input id="email" data-testid="email-input" type="email" required />
+        <p id="email-error" class="field-error hidden" data-testid="email-error"></p>
+        <p id="email-error" class="field-error hidden" data-testid="email-error"></p>
 
         <label for="address">Address</label>
         <input id="address" data-testid="address-input" required />
+        <p id="address-error" class="field-error hidden" data-testid="address-error"></p>
+        <p id="address-error" class="field-error hidden" data-testid="address-error"></p>
 
+        <p id="checkout-error-summary" class="field-error hidden" data-testid="checkout-error-summary"></p>
+        <p id="checkout-error-summary" class="field-error hidden" data-testid="checkout-error-summary"></p>
         <button class="primary" data-testid="place-order" type="submit">Place order</button>
       </form>
       <p id="order-confirmation" class="success hidden" data-testid="order-confirmation" aria-live="polite"></p>

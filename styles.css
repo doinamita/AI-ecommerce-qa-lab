@@ -231,3 +231,15 @@ form {
     cursor: not-allowed;
   }
 }
+
+
+.field-error {
+  color: #b00020;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0.75rem;
+}
+
+input[aria-invalid="true"] {
+  border-color: #b00020;
+}

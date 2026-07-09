@@ -170,6 +170,13 @@ const checkoutModal = document.getElementById('checkout-modal');
 const checkoutClose = document.getElementById('checkout-close');
 const checkoutForm = document.getElementById('checkout-form');
 const orderConfirmation = document.getElementById('order-confirmation');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const addressInput = document.getElementById('address');
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const addressError = document.getElementById('address-error');
+const checkoutErrorSummary = document.getElementById('checkout-error-summary');
 
 function formatMoney(value) {
   return `$${value.toFixed(2)}`;
@@ -326,11 +333,78 @@ categorySelect.addEventListener('change', applyFilters);
 cartToggle.addEventListener('click', () => cartPanel.classList.add('open'));
 cartClose.addEventListener('click', () => cartPanel.classList.remove('open'));
 applyCouponButton.addEventListener('click', applyCoupon);
-checkoutOpen.addEventListener('click', () => checkoutModal.classList.remove('hidden'));
-checkoutClose.addEventListener('click', () => checkoutModal.classList.add('hidden'));
+checkoutOpen.addEventListener('click', () => {
+  clearCheckoutValidation();
+  checkoutModal.classList.remove('hidden');
+});
+checkoutClose.addEventListener('click', () => {
+  clearCheckoutValidation();
+  checkoutModal.classList.add('hidden');
+});
+
+function setFieldError(input, errorElement, message) {
+  errorElement.textContent = message;
+  errorElement.classList.toggle('hidden', !message);
+  input.setAttribute('aria-invalid', message ? 'true' : 'false');
+}
+
+function clearCheckoutValidation() {
+  setFieldError(nameInput, nameError, '');
+  setFieldError(emailInput, emailError, '');
+  setFieldError(addressInput, addressError, '');
+  checkoutErrorSummary.textContent = '';
+  checkoutErrorSummary.classList.add('hidden');
+}
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validateCheckoutForm() {
+  clearCheckoutValidation();
+
+  let isValid = true;
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const address = addressInput.value.trim();
+
+  if (cart.length === 0) {
+    checkoutErrorSummary.textContent = 'Cannot place an order with an empty cart.';
+    checkoutErrorSummary.classList.remove('hidden');
+    isValid = false;
+  }
+
+  if (!name) {
+    setFieldError(nameInput, nameError, 'Full name is required.');
+    isValid = false;
+  }
+
+  if (!email) {
+    setFieldError(emailInput, emailError, 'Email is required.');
+    isValid = false;
+  } else if (!isValidEmail(email)) {
+    setFieldError(emailInput, emailError, 'Enter a valid email address.');
+    isValid = false;
+  }
+
+  if (!address) {
+    setFieldError(addressInput, addressError, 'Address is required.');
+    isValid = false;
+  } else if (address.length < 10) {
+    setFieldError(addressInput, addressError, 'Address must be at least 10 characters.');
+    isValid = false;
+  }
+
+  return isValid;
+}
 
 checkoutForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  if (!validateCheckoutForm()) {
+    return;
+  }
+
   const totals = calculateTotals();
   orderConfirmation.textContent = `Order placed successfully. Total paid: ${formatMoney(totals.total)}.`;
   orderConfirmation.classList.remove('hidden');
@@ -338,6 +412,8 @@ checkoutForm.addEventListener('submit', (event) => {
   couponApplied = false;
   couponInput.value = '';
   couponMessage.textContent = '';
+  checkoutForm.reset();
+  clearCheckoutValidation();
   renderCart();
 });
 
