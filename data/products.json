@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "backpack",
+    "name": "QA Travel Backpack",
+    "price": 49.99,
+    "description": "Durable backpack for testing sessions.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4,
+    "stock": 5
+  },
+  {
+    "id": "stickers",
+    "name": "QA Sticker Pack",
+    "price": 21.99,
+    "description": "Sticker pack for laptops and notebooks.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.1,
+    "stock": 6
+  },
+  {
+    "id": "water-bottle",
+    "name": "Hydration Test Bottle",
+    "price": 24.99,
+    "description": "Reusable bottle for long testing days.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.2,
+    "stock": 7
+  },
+  {
+    "id": "desk-mat",
+    "name": "Bug Bash Desk Mat",
+    "price": 34.99,
+    "description": "Large desk mat for QA workflows.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.3,
+    "stock": 8
+  },
+  {
+    "id": "phone-stand",
+    "name": "Mobile Test Phone Stand",
+    "price": 27.99,
+    "description": "Phone stand for mobile validation.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.4,
+    "stock": 9
+  },
+  {
+    "id": "cable-organizer",
+    "name": "Cable Organizer Kit",
+    "price": 22.99,
+    "description": "Cable organizer for clean test setups.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.5,
+    "stock": 10
+  },
+  {
+    "id": "badge-holder",
+    "name": "Release Badge Holder",
+    "price": 20.99,
+    "description": "Badge holder for release events.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.6,
+    "stock": 11
+  },
+  {
+    "id": "travel-pouch",
+    "name": "Device Travel Pouch",
+    "price": 29.99,
+    "description": "Pouch for cables and test devices.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.7,
+    "stock": 12
+  },
+  {
+    "id": "screen-cleaner",
+    "name": "Screen Cleaner Kit",
+    "price": 23.99,
+    "description": "Cleaning kit for devices under test.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.8,
+    "stock": 13
+  },
+  {
+    "id": "usb-hub",
+    "name": "Compact USB Hub",
+    "price": 39.99,
+    "description": "USB hub for QA device labs.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.9,
+    "stock": 0
+  },
+  {
+    "id": "tablet-case",
+    "name": "Tablet Testing Case",
+    "price": 32.99,
+    "description": "Protective case for tablet testing.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4,
+    "stock": 15
+  },
+  {
+    "id": "keyboard-cover",
+    "name": "Keyboard Dust Cover",
+    "price": 25.99,
+    "description": "Cover for keeping keyboards clean.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.1,
+    "stock": 16
+  },
+  {
+    "id": "mouse-pad",
+    "name": "Precision Mouse Pad",
+    "price": 26.99,
+    "description": "Mouse pad for precise workflows.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.2,
+    "stock": 5
+  },
+  {
+    "id": "camera-cover",
+    "name": "Privacy Camera Cover",
+    "price": 20.99,
+    "description": "Camera covers for test laptops.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.3,
+    "stock": 6
+  },
+  {
+    "id": "device-labels",
+    "name": "Device Label Pack",
+    "price": 21.99,
+    "description": "Labels for organizing test devices.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.4,
+    "stock": 7
+  },
+  {
+    "id": "storage-box",
+    "name": "QA Storage Box",
+    "price": 36.99,
+    "description": "Storage box for test accessories.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.5,
+    "stock": 8
+  },
+  {
+    "id": "charging-cable",
+    "name": "Braided Charging Cable",
+    "price": 28.99,
+    "description": "Durable cable for daily testing.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.6,
+    "stock": 9
+  },
+  {
+    "id": "portable-light",
+    "name": "Portable Desk Light",
+    "price": 44.99,
+    "description": "Small light for focused work.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.7,
+    "stock": 10
+  },
+  {
+    "id": "lanyard",
+    "name": "Quality Team Lanyard",
+    "price": 20.99,
+    "description": "Lanyard for QA events.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.8,
+    "stock": 0
+  },
+  {
+    "id": "cleaning-cloth",
+    "name": "Microfiber Cleaning Cloths",
+    "price": 20.99,
+    "description": "Cloths for screens and devices.",
+    "category": "Accessories",
+    "emoji": "🎒",
+    "rating": 4.9,
+    "stock": 12
+  },
+  {
+    "id": "shirt",
+    "name": "Automation T-Shirt",
+    "price": 19.99,
+    "description": "Soft cotton t-shirt for QA engineers.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4,
+    "stock": 5
+  },
+  {
+    "id": "hoodie",
+    "name": "Quality Engineering Hoodie",
+    "price": 59.99,
+    "description": "Warm hoodie for focused engineering days.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.1,
+    "stock": 6
+  },
+  {
+    "id": "jacket",
+    "name": "Release Manager Jacket",
+    "price": 89.99,
+    "description": "Light jacket for office and travel.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.2,
+    "stock": 7
+  },
+  {
+    "id": "cap",
+    "name": "Bug Hunter Cap",
+    "price": 24.99,
+    "description": "Cap for bug bash events.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.3,
+    "stock": 8
+  },
+  {
+    "id": "socks",
+    "name": "Regression Socks",
+    "price": 20.99,
+    "description": "Comfortable socks for long release days.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.4,
+    "stock": 9
+  },
+  {
+    "id": "sweatshirt",
+    "name": "Test Strategy Sweatshirt",
+    "price": 54.99,
+    "description": "Comfortable sweatshirt for planning sessions.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.5,
+    "stock": 10
+  },
+  {
+    "id": "polo",
+    "name": "QA Lead Polo",
+    "price": 39.99,
+    "description": "Professional polo for team meetings.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.6,
+    "stock": 11
+  },
+  {
+    "id": "beanie",
+    "name": "Winter QA Beanie",
+    "price": 22.99,
+    "description": "Warm beanie for cold mornings.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.7,
+    "stock": 12
+  },
+  {
+    "id": "raincoat",
+    "name": "Cloud Testing Raincoat",
+    "price": 79.99,
+    "description": "Raincoat for unpredictable weather.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.8,
+    "stock": 13
+  },
+  {
+    "id": "scarf",
+    "name": "Sprint Planning Scarf",
+    "price": 29.99,
+    "description": "Soft scarf for daily commute.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.9,
+    "stock": 0
+  },
+  {
+    "id": "gloves",
+    "name": "Keyboard Gloves",
+    "price": 25.99,
+    "description": "Light gloves for cold office days.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4,
+    "stock": 15
+  },
+  {
+    "id": "vest",
+    "name": "Exploratory Testing Vest",
+    "price": 69.99,
+    "description": "Utility vest for travel days.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.1,
+    "stock": 16
+  },
+  {
+    "id": "pants",
+    "name": "Comfort Work Pants",
+    "price": 64.99,
+    "description": "Comfortable pants for office work.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.2,
+    "stock": 5
+  },
+  {
+    "id": "shorts",
+    "name": "Summer QA Shorts",
+    "price": 34.99,
+    "description": "Casual shorts for summer workdays.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.3,
+    "stock": 6
+  },
+  {
+    "id": "long-sleeve",
+    "name": "API Testing Long Sleeve",
+    "price": 32.99,
+    "description": "Long sleeve shirt for engineers.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.4,
+    "stock": 7
+  },
+  {
+    "id": "team-tee",
+    "name": "Quality Team Tee",
+    "price": 21.99,
+    "description": "Team t-shirt for QA events.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.5,
+    "stock": 8
+  },
+  {
+    "id": "training-shirt",
+    "name": "Automation Training Shirt",
+    "price": 23.99,
+    "description": "Shirt for workshop days.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.6,
+    "stock": 9
+  },
+  {
+    "id": "zip-hoodie",
+    "name": "CI Pipeline Zip Hoodie",
+    "price": 74.99,
+    "description": "Zip hoodie for engineering teams.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.7,
+    "stock": 10
+  },
+  {
+    "id": "fleece",
+    "name": "Defect Triage Fleece",
+    "price": 84.99,
+    "description": "Soft fleece for cold offices.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.8,
+    "stock": 0
+  },
+  {
+    "id": "casual-shirt",
+    "name": "Daily Standup Shirt",
+    "price": 27.99,
+    "description": "Casual shirt for daily work.",
+    "category": "Clothing",
+    "emoji": "👕",
+    "rating": 4.9,
+    "stock": 12
+  },
+  {
+    "id": "sneakers",
+    "name": "Regression Sneakers",
+    "price": 79.99,
+    "description": "Comfortable shoes for long release days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4,
+    "stock": 5
+  },
+  {
+    "id": "running-shoes",
+    "name": "Sprint Running Shoes",
+    "price": 84.99,
+    "description": "Light shoes for active days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.1,
+    "stock": 6
+  },
+  {
+    "id": "office-shoes",
+    "name": "Daily Standup Shoes",
+    "price": 69.99,
+    "description": "Comfortable shoes for office days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.2,
+    "stock": 7
+  },
+  {
+    "id": "boots",
+    "name": "Production Support Boots",
+    "price": 94.99,
+    "description": "Durable boots for winter commute.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.3,
+    "stock": 8
+  },
+  {
+    "id": "sandals",
+    "name": "Summer Release Sandals",
+    "price": 34.99,
+    "description": "Casual sandals for warm weather.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.4,
+    "stock": 9
+  },
+  {
+    "id": "slippers",
+    "name": "Remote QA Slippers",
+    "price": 29.99,
+    "description": "Comfortable slippers for remote work.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.5,
+    "stock": 10
+  },
+  {
+    "id": "walking-shoes",
+    "name": "Exploratory Walking Shoes",
+    "price": 74.99,
+    "description": "Shoes for long walks and testing days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.6,
+    "stock": 11
+  },
+  {
+    "id": "training-shoes",
+    "name": "Automation Training Shoes",
+    "price": 82.99,
+    "description": "Shoes for active training sessions.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.7,
+    "stock": 12
+  },
+  {
+    "id": "loafers",
+    "name": "Stakeholder Meeting Loafers",
+    "price": 88.99,
+    "description": "Professional loafers for meetings.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.8,
+    "stock": 13
+  },
+  {
+    "id": "hiking-shoes",
+    "name": "Bug Hunt Hiking Shoes",
+    "price": 98.99,
+    "description": "Strong shoes for outdoor weekends.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.9,
+    "stock": 0
+  },
+  {
+    "id": "canvas-shoes",
+    "name": "Casual Canvas Shoes",
+    "price": 44.99,
+    "description": "Light shoes for everyday use.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4,
+    "stock": 15
+  },
+  {
+    "id": "winter-boots",
+    "name": "Cold Start Winter Boots",
+    "price": 96.99,
+    "description": "Warm boots for cold mornings.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.1,
+    "stock": 16
+  },
+  {
+    "id": "rain-boots",
+    "name": "Cloud Failure Rain Boots",
+    "price": 54.99,
+    "description": "Rain boots for wet days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.2,
+    "stock": 5
+  },
+  {
+    "id": "slip-ons",
+    "name": "Quick Deploy Slip-ons",
+    "price": 39.99,
+    "description": "Easy slip-on shoes.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.3,
+    "stock": 6
+  },
+  {
+    "id": "trail-shoes",
+    "name": "Risk Analysis Trail Shoes",
+    "price": 92.99,
+    "description": "Trail shoes for weekend trips.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.4,
+    "stock": 7
+  },
+  {
+    "id": "comfort-shoes",
+    "name": "Focus Comfort Shoes",
+    "price": 72.99,
+    "description": "Comfort shoes for long days.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.5,
+    "stock": 8
+  },
+  {
+    "id": "gym-shoes",
+    "name": "Performance Test Gym Shoes",
+    "price": 68.99,
+    "description": "Gym shoes for active routines.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.6,
+    "stock": 9
+  },
+  {
+    "id": "classic-shoes",
+    "name": "Classic QA Shoes",
+    "price": 64.99,
+    "description": "Classic everyday shoes.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.7,
+    "stock": 10
+  },
+  {
+    "id": "travel-shoes",
+    "name": "Travel Regression Shoes",
+    "price": 78.99,
+    "description": "Shoes for travel and commuting.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.8,
+    "stock": 0
+  },
+  {
+    "id": "light-sneakers",
+    "name": "Lightweight Test Sneakers",
+    "price": 58.99,
+    "description": "Light sneakers for everyday use.",
+    "category": "Footwear",
+    "emoji": "👟",
+    "rating": 4.9,
+    "stock": 12
+  },
+  {
+    "id": "headphones",
+    "name": "Focus Headphones",
+    "price": 99.99,
+    "description": "Noise-reducing headphones for deep work.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4,
+    "stock": 5
+  },
+  {
+    "id": "keyboard",
+    "name": "Mechanical QA Keyboard",
+    "price": 89.99,
+    "description": "Mechanical keyboard for writing test cases faster.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.1,
+    "stock": 6
+  },
+  {
+    "id": "mouse",
+    "name": "Precision Test Mouse",
+    "price": 29.99,
+    "description": "Lightweight mouse for daily QA workflows.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.2,
+    "stock": 7
+  },
+  {
+    "id": "charger",
+    "name": "Fast USB-C Charger",
+    "price": 34.99,
+    "description": "Fast charger for mobile testing devices.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.3,
+    "stock": 8
+  },
+  {
+    "id": "webcam",
+    "name": "Video Call Webcam",
+    "price": 74.99,
+    "description": "Webcam for remote collaboration.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.4,
+    "stock": 9
+  },
+  {
+    "id": "microphone",
+    "name": "Standup Microphone",
+    "price": 64.99,
+    "description": "Microphone for clear meetings.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.5,
+    "stock": 10
+  },
+  {
+    "id": "speaker",
+    "name": "Desk Speaker",
+    "price": 44.99,
+    "description": "Speaker for desk setup.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.6,
+    "stock": 11
+  },
+  {
+    "id": "power-bank",
+    "name": "Mobile Testing Power Bank",
+    "price": 49.99,
+    "description": "Power bank for device testing.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.7,
+    "stock": 12
+  },
+  {
+    "id": "monitor-light",
+    "name": "Monitor Light Bar",
+    "price": 59.99,
+    "description": "Light bar for monitor setup.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.8,
+    "stock": 13
+  },
+  {
+    "id": "wireless-mouse",
+    "name": "Wireless QA Mouse",
+    "price": 42.99,
+    "description": "Wireless mouse for flexible workflows.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.9,
+    "stock": 0
+  },
+  {
+    "id": "wireless-keyboard",
+    "name": "Wireless Test Keyboard",
+    "price": 69.99,
+    "description": "Wireless keyboard for clean desks.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4,
+    "stock": 15
+  },
+  {
+    "id": "tablet-stand",
+    "name": "Tablet Device Stand",
+    "price": 36.99,
+    "description": "Stand for tablet testing.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.1,
+    "stock": 16
+  },
+  {
+    "id": "bluetooth-tracker",
+    "name": "Device Tracker Tag",
+    "price": 28.99,
+    "description": "Tracker for test devices.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.2,
+    "stock": 5
+  },
+  {
+    "id": "hdmi-adapter",
+    "name": "HDMI Adapter",
+    "price": 26.99,
+    "description": "Adapter for monitor setups.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.3,
+    "stock": 6
+  },
+  {
+    "id": "usb-adapter",
+    "name": "USB-C Adapter",
+    "price": 24.99,
+    "description": "Adapter for device connections.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.4,
+    "stock": 7
+  },
+  {
+    "id": "ethernet-adapter",
+    "name": "Network Test Adapter",
+    "price": 31.99,
+    "description": "Adapter for network validation.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.5,
+    "stock": 8
+  },
+  {
+    "id": "desk-fan",
+    "name": "USB Desk Fan",
+    "price": 25.99,
+    "description": "Small fan for desk comfort.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.6,
+    "stock": 9
+  },
+  {
+    "id": "smart-plug",
+    "name": "Smart Plug",
+    "price": 33.99,
+    "description": "Smart plug for device control.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.7,
+    "stock": 10
+  },
+  {
+    "id": "portable-ssd",
+    "name": "Portable Test SSD",
+    "price": 94.99,
+    "description": "Portable SSD for test files.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.8,
+    "stock": 0
+  },
+  {
+    "id": "charging-station",
+    "name": "Device Charging Station",
+    "price": 87.99,
+    "description": "Charging station for multiple devices.",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "rating": 4.9,
+    "stock": 12
+  },
+  {
+    "id": "notebook",
+    "name": "Bug Bash Notebook",
+    "price": 22.99,
+    "description": "Notebook for exploratory testing notes.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4,
+    "stock": 0
+  },
+  {
+    "id": "mug",
+    "name": "Release Day Coffee Mug",
+    "price": 24.99,
+    "description": "Coffee mug for long regression sessions.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.1,
+    "stock": 6
+  },
+  {
+    "id": "desk-chair",
+    "name": "Ergonomic Desk Chair",
+    "price": 98.99,
+    "description": "Chair for comfortable workdays.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.2,
+    "stock": 7
+  },
+  {
+    "id": "desk-lamp",
+    "name": "Focus Desk Lamp",
+    "price": 45.99,
+    "description": "Desk lamp for focused work.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.3,
+    "stock": 8
+  },
+  {
+    "id": "whiteboard",
+    "name": "Test Planning Whiteboard",
+    "price": 57.99,
+    "description": "Whiteboard for planning test coverage.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.4,
+    "stock": 9
+  },
+  {
+    "id": "markers",
+    "name": "Planning Marker Set",
+    "price": 20.99,
+    "description": "Markers for whiteboard sessions.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.5,
+    "stock": 10
+  },
+  {
+    "id": "sticky-notes",
+    "name": "Risk Analysis Sticky Notes",
+    "price": 21.99,
+    "description": "Sticky notes for QA planning.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.6,
+    "stock": 11
+  },
+  {
+    "id": "planner",
+    "name": "Sprint Planner",
+    "price": 27.99,
+    "description": "Planner for sprint organization.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.7,
+    "stock": 12
+  },
+  {
+    "id": "pen-set",
+    "name": "QA Pen Set",
+    "price": 20.99,
+    "description": "Pen set for daily notes.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.8,
+    "stock": 13
+  },
+  {
+    "id": "document-holder",
+    "name": "Requirement Document Holder",
+    "price": 32.99,
+    "description": "Holder for documents and notes.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.9,
+    "stock": 0
+  },
+  {
+    "id": "desk-shelf",
+    "name": "Desk Organizer Shelf",
+    "price": 48.99,
+    "description": "Shelf for organizing workspace.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4,
+    "stock": 15
+  },
+  {
+    "id": "foot-rest",
+    "name": "Ergonomic Foot Rest",
+    "price": 39.99,
+    "description": "Foot rest for better posture.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.1,
+    "stock": 16
+  },
+  {
+    "id": "monitor-stand",
+    "name": "Monitor Stand",
+    "price": 52.99,
+    "description": "Stand for improving monitor height.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.2,
+    "stock": 5
+  },
+  {
+    "id": "paper-tray",
+    "name": "Document Paper Tray",
+    "price": 28.99,
+    "description": "Tray for office documents.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.3,
+    "stock": 6
+  },
+  {
+    "id": "calendar",
+    "name": "Release Calendar",
+    "price": 23.99,
+    "description": "Calendar for release tracking.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.4,
+    "stock": 7
+  },
+  {
+    "id": "cork-board",
+    "name": "QA Notes Cork Board",
+    "price": 35.99,
+    "description": "Board for planning and reminders.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.5,
+    "stock": 8
+  },
+  {
+    "id": "desk-clock",
+    "name": "Sprint Timer Desk Clock",
+    "price": 31.99,
+    "description": "Clock for timeboxing sessions.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.6,
+    "stock": 9
+  },
+  {
+    "id": "bookend",
+    "name": "Tech Bookend Set",
+    "price": 26.99,
+    "description": "Bookend set for office shelves.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.7,
+    "stock": 10
+  },
+  {
+    "id": "storage-drawer",
+    "name": "Office Storage Drawer",
+    "price": 62.99,
+    "description": "Drawer for office supplies.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.8,
+    "stock": 0
+  },
+  {
+    "id": "ergonomic-cushion",
+    "name": "Ergonomic Seat Cushion",
+    "price": 43.99,
+    "description": "Cushion for comfortable seating.",
+    "category": "Home Office",
+    "emoji": "🖥️",
+    "rating": 4.9,
+    "stock": 12
+  }
+]
